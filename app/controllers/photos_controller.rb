@@ -33,4 +33,20 @@ class PhotosController < ApplicationController
     p.save
     redirect_to("/photos")
   end
+
+  def edit_form
+    @the_photo_to_be_edited = Photo.find(params[:the_id])
+    render("photos/edit_form.html.erb")
+
+  end
+
+  def update_row
+    p = Photo.find(params[:the_id])
+    p.source = params["the_source"]
+    p.caption = params["the_caption"]
+    p.save
+
+    redirect_to("/photos")
+  end
+
 end
