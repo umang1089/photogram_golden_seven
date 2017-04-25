@@ -7,17 +7,17 @@
 <img src="<%= @the_image_url %>">
 
 <p>
-  <%= time_ago_in_words(@created_at) %> ago
+  Uploaded <%= time_ago_in_words(@created_at) %> ago.
 </p>
 
-<a href="/photos">
+<a class="btn btn-default btn-block" href="/photos">
   Go back
 </a>
 
-<a href="#">
+<a class="btn btn-default btn-block" href="#">
   Edit
 </a>
 
-<a href="#">
+<a class="btn btn-default btn-block" href="#">
   Delete
 </a>
