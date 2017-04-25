@@ -1,8 +1,16 @@
 Rails.application.routes.draw do
 
-  get("/photos/:the_id_number", { :controller => "photos", :action => "show" })
+  #CREATE
+  get("/photos/new", { :controller => "photos", :action => "new_form"})
+  get("/create_photo", { :controller => "photos", :action => "create_row"})
 
+  #READ
+  get("/photos/:the_id_number", { :controller => "photos", :action => "show" })
   get("/photos", { :controller => "photos", :action => "index" })
+
+  #UPDATE
+
+  #DELETE
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
