@@ -1,4 +1,4 @@
-# Photogram Golden Seven
+# Photogram Golden Seven - Umang Shukla
 
 ## Standard Workflow
 
